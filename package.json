@@ -1,0 +1,33 @@
+{
+  "name": "serverless-pyproject-plugin",
+  "version": "1.0.0",
+  "description": "A small Serverless plugin for pyproject.toml compatibility",
+  "author": {
+    "name": "Isaac Whitfield",
+    "email": "iw@whitfin.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/whitfin/serverless-pyproject-plugin.git"
+  },
+  "bugs": {
+    "email": "iw@whitfin.com",
+    "url": "http://github.com/whitfin/serverless-pyproject-plugin/issues"
+  },
+  "main": "lib/plugin.js",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "keywords": [
+    "aws",
+    "python",
+    "pyproject",
+    "serverless",
+    "serverless.com"
+  ],
+  "dependencies": {
+    "toml": "^3.0.0"
+  },
+  "peerDependencies": {
+    "serverless": "3 - 4"
+  }
+}
