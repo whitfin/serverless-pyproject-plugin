@@ -2,12 +2,13 @@
 
 [![Build Status](https://img.shields.io/github/actions/workflow/status/whitfin/serverless-pyproject-plugin/ci.yml?branch=main)](https://github.com/whitfin/serverless-pyproject-plugin/actions) [![Published Version](https://img.shields.io/npm/v/serverless-pyproject-plugin.svg)](https://npmjs.com/package/serverless-pyproject-plugin) [![Published Downloads](https://img.shields.io/npm/dt/serverless-pyproject-plugin)](https://npmjs.com/package/serverless-pyproject-plugin)
 
-This repository contains a very small [Serverless](https://serverless.com) plugin
-to enable compatibility with `pyproject.toml` in cases you're not using Poetry.
+This repository contains a small [Serverless](https://serverless.com) plugin
+to enable development using `pyproject.toml` without Poetry.
 
-This plugin will export the dependencies list of `pyproject.toml` into `requirements.txt`
-during a build. This file can then be used via [serverless-python-requirements](https://github.com/serverless/serverless-python-requirements)
-when packaging Python applications.
+This is done by exporting the dependencies listing from `pyproject.toml` into
+a typical `requirements.txt` file during a Serverless build. This file can then
+be picked up by other tools such as [serverless-python-requirements](https://github.com/serverless/serverless-python-requirements)
+in order to generate a Python bundle.
 
 ## Installation
 
